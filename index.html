@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agustín Martin | Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        oscuro: '#414141',
+                        turquesa: '#4EE9D6',
+                        cuerpo: '#303030',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cuerpo">
+    
+    <aside class="fixed bg-oscuro w-9 h-screen flex flex-col justify-center items-center">
+        <div class="h-1/4 flex flex-col justify-between">
+            <a href="#home" class="scrollTo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#4EE9D6">
+                    <path
+                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                </svg>
+            </a>
+            <a href="#portfolio" class="scrollTo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="#4EE9D6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+            </a>
+            <a href="#habilidades" class="scrollTo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="#4EE9D6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+            </a>
+            <a href="#contact" class="scrollTo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="#4EE9D6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+            </a>
+        </div>
+    </aside>
+    <main class="w-full">
+        <section class="flex md:flex-row flex-col justify-around items-center h-screen px-4" id="home">
+            <div class="flex flex-col justify-around h-fit container pl-28">
+                <h1 class="text-white text-7xl">Hola, <br>
+                    soy Agustin Martin, <br>
+                    web Developer</h1>
+                <p class="text-white text-lg">Frontend Developer y UX/UI Design</p>
+                <a href="#contact"
+                    class="border-2 uppercase rounded border-turquesa border-solid ease-in-out text-turquesa text-2xl text-center w-1/4 botonNeon scrollTo">Hablemos</a>
+                <div class="hidden md:block animatedHr w-2 h-2 rounded-full bg-turquesa my-1"></div>
+            </div>
+            <div class="container">
+                <div class="w-4 h-4 bg-turquesa palo1 my-1"></div>
+                <div class="w-4 h-4 bg-turquesa palo2 my-1"></div>
+                <div class="w-4 h-4 bg-turquesa palo3 my-1"></div>
+                <div class="w-4 h-4 bg-cuerpo palo4 my-1"></div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2 class="text-center text-white text-5xl">Portfolio</h2>
+            <p class="text-turquesa text-left md:text-center text-2xl">Algunos de los mejores trabajos que he hecho</p>
+            <div class="container px-28" id="containerTrabajo">
+                <div class="flex flex-row justify-center">
+                    <div
+                        class="w-24 h-8 border-2 cursor-pointer uppercase rounded border-turquesa border-solid ease-in-out text-turquesa text-2xl mx-2 text-center play">
+                        Play</div>
+                    <div
+                        class="w-24 h-8 border-2 cursor-pointer uppercase rounded border-turquesa border-solid ease-in-out text-turquesa text-2xl mx-2 text-center pause">
+                        Pause</div>
+                </div>
+                <a href="https://inkinvissible.github.io/ac/" target="_blank" rel="noopener noreferrer"><img
+                        class="w-fit trabajosFotos"
+                        src="https://inkinvissible.github.io/agus-martin/imagenes/ac-logo.webp"
+                        alt="Logo Accesorios Cappelletti"></a>
+                <a href="http://aclif.com.ar" target="_blank" rel="noopener noreferrer"><img
+                        class="w-fit h-fit trabajosFotos"
+                        src="https://inkinvissible.github.io/agus-martin/imagenes/aclif-logo.webp" alt="Logo Aclif"></a>
+                <a href="https://inkinvissible.github.io/JustUs/" target="_blank" rel="noopener noreferrer"><img
+                        class="w-fit h-fit trabajosFotos"
+                        src="https://inkinvissible.github.io/agus-martin/imagenes/just-us-logo.webp"
+                        alt="logo Just Us"></a>
+                <a href="https://inkinvissible.github.io/DisCor/" target="_blank" rel="noopener noreferrer"><img
+                        class="w-fit h-fit trabajosFotos"
+                        src="https://inkinvissible.github.io/agus-martin/imagenes/discor-logo.webp"
+                        alt="Logo DisCor"></a>
+            </div>
+        </section>
+        <section id="habilidades">
+            <h2 class="text-center text-white text-5xl">Habilidades</h2>
+            <p class="text-turquesa text-left md:text-center text-2xl">Las he perfeccionado a lo largo de mi carrera</p>
+
+            <div class="grid grid-cols-3 grid-rows-4 container px-28 justify-items-center">
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">Javascript</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">JQuery</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">HTML5</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">CSS3</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">UI/UX Design</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">Anime.js</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">Java</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">Figma</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">Premiere</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">SCSS</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">Adobe XD</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">Wordpress</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">TailwindCss</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">Bootstrap</p>
+                <p class="w-48 text-2xl text-white textHabilidades bg-turquesa p-2 text-center">Canva</p>
+
+            </div>
+
+        </section>
+        <section id="contact" class="container px-48 mt-5">
+            <h2 class="text-left md:text-center text-white text-5xl">Contacto</h2>
+            <p class="text-turquesa text-left md:text-center text-2xl">Me muero por conocerte, hablemos</p>
+
+            <form class="form w-1/3 h-max bg-oscuro rounded hover:shadow-lg hover:shadow-turquesa ease-in-out duration-300 m-auto p-4 mt-4">
+                <h3 class="text-3xl text-white">HABLEMOS</h3>
+                <p type="Nombre:"><input placeholder="Tu nombre..." class="w-full p-4 outline-0 ease-in-out border-b-2 border-turquesa focus:border-cuerpo block text-white text-xl bg-oscuro"></input></p>
+                <p type="Email:"><input placeholder="Escribe tu email..." class="w-full p-4 outline-0 ease-in-out border-b-2 border-turquesa focus:border-cuerpo block text-white text-xl bg-oscuro"></input></p>
+                <p type="Mensaje:"><input placeholder="Qué es lo que necesitas?" class="w-full p-4 outline-0 ease-in-out border-b-2 border-turquesa focus:border-cuerpo block text-white text-xl bg-oscuro"></input></p>
+                <button class="p-2 m-4 text-xl ease-in-out duration-300 border-2 border-cuerpo text-white w-24 hover:text-oscuro hover:bg-turquesa btn">Enviar</button>
+              </form>
+
+
+
+        </section>
+        <br><br><br><br><br><br>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="scripts/loader.js"></script> -->
+
+</body>
+
+</html>
